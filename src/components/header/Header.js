@@ -1,7 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { profileInfo, siteLinks } from '../assets/js/resumeStore';
+import { profileInfo, siteLinks } from '../../assets/js/resumeStore';
 import SiteLink from './SiteLink';
+import ContactLink from './ContactLink';
 
 const { name, jobTitle, email, phone, profilePic } = profileInfo;
 
@@ -15,24 +15,18 @@ const Header = () => (
           <div className="title mb-3">{jobTitle}</div>
           <ul className="list-unstyled">
             <li className="mb-2">
-              <a href={`mailto:${email.trim()}`}>
-                <FontAwesomeIcon
-                  icon={['far', 'envelope']}
-                  className="fa-fw mr-2"
-                  size="lg"
-                />
-                {email}
-              </a>
+              <ContactLink
+                href={`mailto:${email.trim()}`}
+                icon={['far', 'envelope']}
+                text={email}
+              />
             </li>
             <li>
-              <a href={`tel:${phone.replace(/ /g, '').replace('+', '00')}`}>
-                <FontAwesomeIcon
-                  icon={['fas', 'mobile-alt']}
-                  className="fa-fw mr-2"
-                  size="lg"
-                />
-                {phone}
-              </a>
+              <ContactLink
+                href={`tel:${phone.replace(/ /g, '').replace('+', '00')}`}
+                icon={['fas', 'mobile-alt']}
+                text={phone}
+              />
             </li>
           </ul>
         </div>

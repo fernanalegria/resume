@@ -9488,3 +9488,16 @@ a.theme-btn-on-bg {
     }
   }
 }
+
+.resume-timeline-item-header {
+  position: relative;
+  .top-right-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.interests-section .resume-section-content {
+  font-size: 0.9rem;
+}
