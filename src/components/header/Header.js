@@ -1,0 +1,47 @@
+import React from 'react';
+import { profileInfo, siteLinks } from '../../assets/js/resumeStore';
+import SiteLink from './SiteLink';
+import ContactLink from './ContactLink';
+
+const { name, jobTitle, email, phone, profilePic } = profileInfo;
+
+const Header = () => (
+  <header className="resume-header pt-4 pt-md-0">
+    <div className="media flex-column flex-md-row">
+      <img className="mr-3 img-fluid picture mx-auto" src={profilePic} alt="" />
+      <div className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+        <div className="primary-info">
+          <h1 className="name mt-0 mb-1 text-white text-uppercase">{name}</h1>
+          <div className="title mb-3">{jobTitle}</div>
+          <ul className="list-unstyled">
+            <li className="mb-2">
+              <ContactLink
+                href={`mailto:${email.trim()}`}
+                icon={['far', 'envelope']}
+                text={email}
+              />
+            </li>
+            <li>
+              <ContactLink
+                href={`tel:${phone.replace(/ /g, '').replace('+', '00')}`}
+                icon={['fas', 'mobile-alt']}
+                text={phone}
+              />
+            </li>
+          </ul>
+        </div>
+        <div className="secondary-info ml-md-auto mt-2">
+          <ul className="resume-social list-unstyled">
+            {siteLinks.map(({ id, href, icon, text }) => (
+              <li className="mb-3" key={id}>
+                <SiteLink href={href} icon={icon} text={text} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+);
+
+export default Header;
