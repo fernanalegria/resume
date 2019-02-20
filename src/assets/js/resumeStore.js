@@ -3,6 +3,7 @@ import eyLogo from '../images/ey.png';
 import deloitteLogo from '../images/deloitte.png';
 import minsaitLogo from '../images/minsait.jpg';
 import accentureLogo from '../images/accenture.jpg';
+import downloadPdf from './downloadPdf';
 
 export const profileInfo = {
   name: 'Fernando Alegria',
@@ -16,19 +17,22 @@ export const siteLinks = [
   {
     id: 1,
     href: 'https://www.linkedin.com/in/fernando-alegria/',
-    icon: ['fab', 'linkedin-in'],
+    icon: 'fab fa-linkedin-in',
     text: 'linkedin.com/in/fernando-alegria'
   },
   {
     id: 2,
     href: 'https://github.com/fernanalegria/',
-    icon: ['fab', 'github'],
+    icon: 'fab fa-github',
     text: 'github.com/fernanalegria'
-  },
+  }
+];
+
+export const buttons = [
   {
-    id: 3,
-    href: '',
-    icon: ['fas', 'file-pdf'],
+    id: 1,
+    onClick: downloadPdf,
+    icon: 'fas fa-file-pdf',
     text: 'Download PDF version'
   }
 ];

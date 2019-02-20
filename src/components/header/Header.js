@@ -1,6 +1,7 @@
 import React from 'react';
-import { profileInfo, siteLinks } from '../../assets/js/resumeStore';
+import { profileInfo, siteLinks, buttons } from '../../assets/js/resumeStore';
 import SiteLink from './SiteLink';
+import PseudoLink from './PseudoLink';
 import ContactLink from './ContactLink';
 
 const { name, jobTitle, email, phone, profilePic } = profileInfo;
@@ -17,14 +18,14 @@ const Header = () => (
             <li className="mb-2">
               <ContactLink
                 href={`mailto:${email.trim()}`}
-                icon={['far', 'envelope']}
+                icon="far fa-envelope"
                 text={email}
               />
             </li>
             <li>
               <ContactLink
                 href={`tel:${phone.replace(/ /g, '').replace('+', '00')}`}
-                icon={['fas', 'mobile-alt']}
+                icon="fas fa-mobile-alt"
                 text={phone}
               />
             </li>
@@ -35,6 +36,11 @@ const Header = () => (
             {siteLinks.map(({ id, href, icon, text }) => (
               <li className="mb-3" key={id}>
                 <SiteLink href={href} icon={icon} text={text} />
+              </li>
+            ))}
+            {buttons.map(({ id, onClick, icon, text }) => (
+              <li className="mb-3" key={id}>
+                <PseudoLink onClick={onClick} icon={icon} text={text} />
               </li>
             ))}
           </ul>

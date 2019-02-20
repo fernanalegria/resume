@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from './header/Header';
 import Body from './body/Body';
 import CareerSummary from './body/CareerSummary';
@@ -10,7 +10,7 @@ import Languages from './body/sidePanel/Languages';
 import Interests from './body/sidePanel/Interests';
 
 const Resume = () => (
-  <Fragment>
+  <div id="resume">
     <Header />
     <Body>
       <div className="row">
@@ -27,7 +27,7 @@ const Resume = () => (
         </div>
       </div>
     </Body>
-  </Fragment>
+  </div>
 );
 
 export default Resume;
