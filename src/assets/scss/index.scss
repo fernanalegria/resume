@@ -194,14 +194,15 @@ sup {
   top: -0.5em;
 }
 
-a {
+a,
+.btn-anchor {
   color: #22a162;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   &:hover {
     color: #15623c;
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
   &:not([href]):not([tabindex]) {
     color: inherit;
@@ -9333,10 +9334,11 @@ a.theme-btn-on-bg {
   .title {
     font-size: 1.5rem;
   }
-  a {
-    color: rgba(255, 255, 255, 0.6);
+  a,
+  .btn-anchor {
+    color: rgba(255, 255, 255, 0.6) !important;
     &:hover {
-      color: white;
+      color: white !important;
     }
   }
 }
@@ -9500,4 +9502,10 @@ a.theme-btn-on-bg {
 
 .interests-section .resume-section-content {
   font-size: 0.9rem;
+}
+
+.btn-anchor {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }

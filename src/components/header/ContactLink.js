@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ContactLink = ({ href, icon, text }) => (
   <a href={href}>
-    <FontAwesomeIcon icon={icon} className="fa-fw mr-2" size="lg" />
+    <i className={`${icon} fa-fw fa-lg mr-2`} />
     {text}
   </a>
 );
