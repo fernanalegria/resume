@@ -230,6 +230,10 @@ export const skillSets = [
       {
         name: 'SQL Server',
         value: 90
+      },
+      {
+        name: 'Redis',
+        value: 75
       }
     ]
   },
