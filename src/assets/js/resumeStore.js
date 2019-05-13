@@ -57,7 +57,7 @@ export const workExperience = [
       {
         id: 1,
         heading:
-          'Development of an ingestion pipeline to transform massive data into insightful analytics',
+          'Development of an ingestion pipeline to transform raw data into insightful analytics',
         description:
           'The web platform is key to monitor the ingestion process and measure data quality. The entire platform was built with a wide range of cutting-edge technologies and the aid of an Agile software development methodology. Furthermore, Quality Assurance (QA) was enforced to deliver a robust asset, which is helpful across multiple industries.',
         stack: [
@@ -77,7 +77,7 @@ export const workExperience = [
       },
       {
         id: 2,
-        heading: "Development of an OCR tool's web interface",
+        heading: "Design and implementation of an OCR solution's web interface",
         description:
           'The platform is designed to extract specific content from a large set of scanned documents. Users are able to consult the analysis run over their documents and retrain the OCR algorithms by correcting any wrong assumptions made by the platform.',
         stack: [
@@ -203,7 +203,7 @@ export const skillSets = [
       },
       {
         name: 'HTML5/CSS3',
-        value: 85
+        value: 90
       }
     ]
   },
@@ -229,11 +229,7 @@ export const skillSets = [
     items: [
       {
         name: 'SQL Server',
-        value: 85
-      },
-      {
-        name: 'Redis',
-        value: 75
+        value: 90
       }
     ]
   },
@@ -246,11 +242,9 @@ export const skillSets = [
       'Unit Testing',
       'Wireframing',
       'Git',
-      'SVN',
-      'Data Modelling',
       'Agile',
-      'Responsive Design',
-      'Branching Strategy'
+      'Data Modelling',
+      'Responsive Design'
     ]
   }
 ];
