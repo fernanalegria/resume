@@ -39,7 +39,7 @@ const Header = () => (
               </li>
             ))}
             {buttons.map(({ id, onClick, icon, text }) => (
-              <li className="mb-3" key={id}>
+              <li className="mb-3 d-print-none" key={id}>
                 <PseudoLink onClick={onClick} icon={icon} text={text} />
               </li>
             ))}
