@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import BaseContainer from './BaseContainer';
 import Resume from './Resume';
-import ReactToPrint from 'react-to-print';
 
 class App extends Component {
+  getResumeRef = () => this.resumeRef;
+
   render() {
     return (
       <BaseContainer>
-        <Resume ref={el => (this.componentRef = el)} />
-        <ReactToPrint
-          trigger={() => <button>Print this out!</button>}
-          content={() => this.componentRef}
+        <Resume
+          ref={el => (this.resumeRef = el)}
+          getResumeRef={this.getResumeRef}
         />
       </BaseContainer>
     );

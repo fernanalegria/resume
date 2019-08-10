@@ -3,7 +3,6 @@ import eyLogo from '../images/ey.png';
 import deloitteLogo from '../images/deloitte.png';
 import minsaitLogo from '../images/minsait.jpg';
 import accentureLogo from '../images/accenture.jpg';
-import downloadPdf from './downloadPdf';
 
 export const profileInfo = {
   name: 'Fernando Alegria',
@@ -28,14 +27,7 @@ export const siteLinks = [
   }
 ];
 
-export const buttons = [
-  {
-    id: 1,
-    onClick: downloadPdf,
-    icon: 'fas fa-file-pdf',
-    text: 'Download PDF version'
-  }
-];
+export const buttons = [];
 
 export const careerSummary = [
   "I graduated from the Technical University of Madrid (UPM) in 2015 with a BSc in Industrial Engineering. Soon after, my tech enthusiasm led me towards a career in Software Engineering. I'm a Full-Stack Engineer with over 2 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
@@ -271,7 +263,7 @@ export const education = [
     title: 'React Developer Nanodegree',
     entity: 'Udacity',
     from: 'Nov 2018',
-    to: '2019'
+    to: 'Apr 2019'
   },
   {
     id: 2,

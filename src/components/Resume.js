@@ -13,7 +13,7 @@ class Resume extends Component {
   render() {
     return (
       <div id="resume">
-        <Header />
+        <Header {...this.props} />
         <Body>
           <div className="row">
             <div className="col-lg-9">
