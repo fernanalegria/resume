@@ -3,10 +3,11 @@ import { profileInfo, siteLinks, buttons } from '../../assets/js/resumeStore';
 import SiteLink from './SiteLink';
 import PseudoLink from './PseudoLink';
 import ContactLink from './ContactLink';
+import ReactToPrint from 'react-to-print';
 
 const { name, jobTitle, email, phone, profilePic } = profileInfo;
 
-const Header = () => (
+const Header = ({ getResumeRef }) => (
   <header className="resume-header pt-4 pt-md-0">
     <div className="media flex-column flex-md-row">
       <img className="mr-3 img-fluid picture mx-auto" src={profilePic} alt="" />
@@ -39,10 +40,22 @@ const Header = () => (
               </li>
             ))}
             {buttons.map(({ id, onClick, icon, text }) => (
-              <li className="mb-3" key={id}>
+              <li className="mb-3 d-print-none" key={id}>
                 <PseudoLink onClick={onClick} icon={icon} text={text} />
               </li>
             ))}
+            <li className="mb-3 d-print-none">
+              <ReactToPrint
+                trigger={() => (
+                  <PseudoLink
+                    onClick={() => {}}
+                    icon="fas fa-file-pdf"
+                    text="Print or download"
+                  />
+                )}
+                content={() => getResumeRef()}
+              />
+            </li>
           </ul>
         </div>
       </div>

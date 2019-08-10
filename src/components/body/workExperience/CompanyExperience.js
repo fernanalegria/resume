@@ -24,11 +24,13 @@ const CompanyExperience = ({
         )}
       </h3>
       <div className="resume-position-time">{`${from} - ${to}`}</div>
-      <img
-        className="resume-company-logo top-right-icon"
-        src={logo}
-        alt={name}
-      />
+      {logo ? (
+        <img
+          className="resume-company-logo top-right-icon"
+          src={logo}
+          alt={name}
+        />
+      ) : null}
     </div>
     <div className="resume-timeline-item-desc">
       {projects.map(project => (

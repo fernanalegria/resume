@@ -4,14 +4,16 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.2",
-    "gh-pages": "^2.0.1",
-    "html2canvas": "^1.0.0-alpha.12",
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "caniuse-lite": "^1.0.30000989",
+    "gh-pages": "^2.1.0",
+    "html2canvas": "^1.0.0-rc.3",
     "jspdf": "^1.5.3",
-    "node-sass": "^4.11.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.5",
+    "typescript": "^3.5.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -43,5 +45,8 @@
     "arrowParens": "avoid",
     "proseWrap": "preserve",
     "htmlWhitespaceSensitivity": "strict"
+  },
+  "devDependencies": {
+    "react-to-print": "^2.3.0"
   }
 }

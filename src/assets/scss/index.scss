@@ -9174,15 +9174,6 @@ a.text-dark {
 }
 
 @media print {
-  * {
-    text-shadow: none !important;
-    box-shadow: none !important;
-    &::before,
-    &::after {
-      text-shadow: none !important;
-      box-shadow: none !important;
-    }
-  }
   a:not(.btn) {
     text-decoration: underline;
   }
@@ -9225,9 +9216,6 @@ a.text-dark {
   }
   .navbar {
     display: none;
-  }
-  .badge {
-    border: 1px solid #000;
   }
   .table {
     border-collapse: collapse !important;
@@ -9347,7 +9335,9 @@ a.theme-btn-on-bg {
   font-size: 0.875rem;
   .fa-container {
     font-size: 1rem;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
     border-radius: 0.125rem;
@@ -9508,4 +9498,38 @@ a.theme-btn-on-bg {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+/*************************** Print Styles ****************************/
+
+@media print {
+  .pt-md-0 {
+    padding-top: 0 !important;
+  }
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+  .ml-md-auto {
+    margin-left: auto !important;
+  }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .resume-header {
+    height: 220px;
+    .picture {
+      width: 220px;
+      border-radius: 0;
+    }
+  }
+  .resume-body {
+    .list-inline-item {
+      margin-bottom: 0.5rem;
+    }
+  }
 }

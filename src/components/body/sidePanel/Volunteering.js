@@ -2,7 +2,7 @@ import React from 'react';
 import { volunteering } from '../../../assets/js/resumeStore';
 
 const Volunteering = () => (
-  <section className="resume-section volunteering-section mb-5">
+  <section className="resume-section volunteering-section d-print-none mb-5">
     <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
     Volunteering
     </h2>

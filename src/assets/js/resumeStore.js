@@ -3,11 +3,10 @@ import eyLogo from '../images/ey.png';
 import deloitteLogo from '../images/deloitte.png';
 import minsaitLogo from '../images/minsait.jpg';
 import accentureLogo from '../images/accenture.jpg';
-import downloadPdf from './downloadPdf';
 
 export const profileInfo = {
   name: 'Fernando Alegria',
-  jobTitle: 'Full-Stack Web Developer',
+  jobTitle: 'Senior Software Engineer',
   email: 'fernanalegria@gmail.com',
   phone: '+34 620 27 26 44',
   profilePic
@@ -28,38 +27,61 @@ export const siteLinks = [
   }
 ];
 
-export const buttons = [
-  {
-    id: 1,
-    onClick: downloadPdf,
-    icon: 'fas fa-file-pdf',
-    text: 'Download PDF version'
-  }
-];
+export const buttons = [];
 
 export const careerSummary = [
-  'I graduated from the Technical University of Madrid (UPM) in 2015 with a BSc in Industrial Engineering. Soon after, my tech enthusiasm led me towards a career in Web Development. I am a Full-Stack Web Developer with a focus on JS frameworks, currently working at EY’s AI Centre of Excellence. As a self-taught developer, I love to challenge myself everyday. Mobile development is my next ambition.',
-  'In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland, where I obtained the Certificate in Advanced English (CAE), and this last year at EY thanks to such an international work environment I proudly belong to.',
-  "These days, my focus is on further improving my coding skills in order to grow my tech career. What's more, I love to help and learn from my teammates so that everyone knows and follows best practices. Only by doing so, can we offer high quality services up to the most demanding clients' standard."
+  "I graduated from the Technical University of Madrid (UPM) in 2015 with a BSc in Industrial Engineering. Soon after, my tech enthusiasm led me towards a career in Software Engineering. I'm a Full-Stack Engineer with over 2 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
+  'In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland and these last two years at EY, thanks to such an international work environment I proudly belong to.',
+  "These days, my focus is on further improving my coding and soft skills in order to grow my tech career. What's more, I love to help and learn from my teammates so that everyone knows and follows best practices. Only by doing so, can we offer high quality services up to the most demanding clients' standard."
 ];
 
 export const workExperience = [
   {
     id: 1,
-    jobTitle: 'Full-Stack Web Developer',
-    from: 'Feb 2018',
+    jobTitle: 'Senior Software Engineer',
+    from: 'Aug 2019',
     to: 'Present',
     company: {
       name: 'EY',
       logo: eyLogo
     },
+    projects: []
+  },
+  {
+    id: 2,
+    jobTitle: 'Software Engineer',
+    from: 'Feb 2018',
+    to: 'Jul 2019',
+    company: {
+      name: 'EY'
+    },
     projects: [
       {
         id: 1,
         heading:
+          "Design and implementation of an OCR solution's data pipeline and web interface",
+        description:
+          'Our solution aims to avoid tedious manual work to find very specific content among a large set of documents. Clients are able to consult the analyses run over their documents, and train the Machine Learning models by correcting any wrong assumptions made by the platform.',
+        stack: [
+          'Angular',
+          'Bootstrap',
+          'HTML5',
+          'Scss',
+          'Django',
+          'SQL Server',
+          'Redis',
+          'Docker',
+          'Kubernetes',
+          'Azure DevOps',
+          'Kibana'
+        ]
+      },
+      {
+        id: 2,
+        heading:
           'Development of an ingestion pipeline to transform raw data into insightful analytics',
         description:
-          'The web platform is key to monitor the ingestion process and measure data quality. The entire platform was built with a wide range of cutting-edge technologies and the aid of an Agile software development methodology. Furthermore, Quality Assurance (QA) was enforced to deliver a robust asset, which is helpful across multiple industries.',
+          'Our web platform is key to monitor the ingestion process and measure data quality. The entire platform was built with a wide range of cutting-edge technologies and the aid of an Agile software development methodology. Furthermore, Quality Assurance (QA) was enforced to deliver a robust asset, which is helpful across multiple industries.',
         stack: [
           'Vue.js',
           'JS',
@@ -74,29 +96,11 @@ export const workExperience = [
           'Apache Hive',
           'Selenium'
         ]
-      },
-      {
-        id: 2,
-        heading: "Design and implementation of an OCR solution's web interface",
-        description:
-          'The platform is designed to extract specific content from a large set of scanned documents. Users are able to consult the analysis run over their documents and retrain the OCR algorithms by correcting any wrong assumptions made by the platform.',
-        stack: [
-          'Angular',
-          'Bootstrap',
-          'HTML5',
-          'Scss',
-          'Django',
-          'SQL Server',
-          'Redis',
-          'Docker',
-          'Kubernetes',
-          'Azure DevOps'
-        ]
       }
     ]
   },
   {
-    id: 2,
+    id: 3,
     jobTitle: 'Front-End Web Developer',
     from: 'Dec 2017',
     to: 'Feb 2018',
@@ -122,7 +126,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     jobTitle: 'Full-Stack Web Developer',
     from: 'Oct 2016',
     to: 'Dec 2017',
@@ -155,9 +159,9 @@ export const workExperience = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     jobTitle: {
-      name: 'Software Engineer',
+      name: 'SAP Consultant',
       subcategory: 'Intern'
     },
     from: 'Aug 2015',
@@ -258,8 +262,8 @@ export const education = [
     id: 1,
     title: 'React Developer Nanodegree',
     entity: 'Udacity',
-    from: '2018',
-    to: 'Present'
+    from: 'Nov 2018',
+    to: 'Apr 2019'
   },
   {
     id: 2,
