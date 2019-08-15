@@ -30,7 +30,7 @@ export const siteLinks = [
 export const buttons = [];
 
 export const careerSummary = [
-  "I graduated from the Technical University of Madrid (UPM) in 2015 with a BSc in Industrial Engineering. Soon after, my tech enthusiasm led me towards a career in Software Engineering. I'm a Full-Stack Engineer with over 2 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
+  "I'm a Full-Stack Engineer with over 3 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. Although mobile and desktop apps are not my expertise, I do have some knowledge of React Native and Electron as well. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
   'In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland and these last two years at EY, thanks to such an international work environment I proudly belong to.',
   "These days, my focus is on further improving my coding and soft skills in order to grow my tech career. What's more, I love to help and learn from my teammates so that everyone knows and follows best practices. Only by doing so, can we offer high quality services up to the most demanding clients' standard."
 ];
