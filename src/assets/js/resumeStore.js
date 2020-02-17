@@ -38,7 +38,9 @@ export const careerSummary = [
 export const workExperience = [
   {
     id: 1,
-    jobTitle: 'Senior Software Engineer',
+    jobTitle: {
+      name: 'Senior Software & DevOps Engineer'
+    },
     from: 'Aug 2019',
     to: 'Present',
     company: {
@@ -49,7 +51,9 @@ export const workExperience = [
   },
   {
     id: 2,
-    jobTitle: 'Software Engineer',
+    jobTitle: {
+      name: 'Software Engineer'
+    },
     from: 'Feb 2018',
     to: 'Jul 2019',
     company: {
@@ -101,7 +105,9 @@ export const workExperience = [
   },
   {
     id: 3,
-    jobTitle: 'Front-End Web Developer',
+    jobTitle: {
+      name: 'Front-End Web Developer'
+    },
     from: 'Dec 2017',
     to: 'Feb 2018',
     company: {
@@ -127,7 +133,9 @@ export const workExperience = [
   },
   {
     id: 4,
-    jobTitle: 'Full-Stack Web Developer',
+    jobTitle: {
+      name: 'Full-Stack Web Developer'
+    },
     from: 'Oct 2016',
     to: 'Dec 2017',
     company: {
