@@ -2,7 +2,7 @@ import React from 'react';
 import { languages } from '../../../assets/js/resumeStore';
 
 const Languages = () => (
-  <section className="resume-section language-section mb-5">
+  <section className="resume-section language-section mb-3">
     <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
       Languages
     </h2>
