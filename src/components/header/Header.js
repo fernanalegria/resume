@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileInfo, siteLinks, buttons } from '../../assets/js/resumeStore';
+import { profileInfo, siteLinks } from '../../assets/js/resumeStore';
 import SiteLink from './SiteLink';
 import PseudoLink from './PseudoLink';
 import ContactLink from './ContactLink';
@@ -39,22 +39,25 @@ const Header = ({ getResumeRef }) => (
                 <SiteLink href={href} icon={icon} text={text} />
               </li>
             ))}
-            {buttons.map(({ id, onClick, icon, text }) => (
-              <li className="mb-3 d-print-none" key={id}>
-                <PseudoLink onClick={onClick} icon={icon} text={text} />
-              </li>
-            ))}
             <li className="mb-3 d-print-none">
-              <ReactToPrint
-                trigger={() => (
-                  <PseudoLink
-                    onClick={() => {}}
-                    icon="fas fa-file-pdf"
-                    text="Print or download"
-                  />
-                )}
-                content={() => getResumeRef()}
-              />
+              {process.env.NODE_ENV === 'development' ? (
+                <ReactToPrint
+                  trigger={() => (
+                    <PseudoLink
+                      onClick={() => {}}
+                      icon="fas fa-file-pdf"
+                      text="Print or download"
+                    />
+                  )}
+                  content={() => getResumeRef()}
+                />
+              ) : (
+                <SiteLink
+                  href="/FernandoAlegria_Resume.pdf"
+                  icon="fas fa-file-pdf"
+                  text="Print or download"
+                />
+              )}
             </li>
           </ul>
         </div>

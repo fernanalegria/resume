@@ -14,14 +14,13 @@ const CompanyExperience = ({
   <article className={`resume-timeline-item position-relative ${className}`}>
     <div className="resume-timeline-item-header mb-2">
       <h3 className="resume-position-title font-weight-bold mb-1">
-        {jobTitle.subcategory ? (
-          <Fragment>
-            {jobTitle.name}{' '}
-            <small className="text-muted">{`(${jobTitle.subcategory})`}</small>
-          </Fragment>
-        ) : (
-          jobTitle
-        )}
+        <Fragment>
+          {`${jobTitle.name} `}
+          {jobTitle.subcategory && (
+            <small className="text-muted">{`(${jobTitle.subcategory}) `}</small>
+          )}
+          <small className="text-muted">{`@ ${name}`}</small>
+        </Fragment>
       </h3>
       <div className="resume-position-time">{`${from} - ${to}`}</div>
       {logo ? (

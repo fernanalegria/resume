@@ -6,7 +6,7 @@ import accentureLogo from '../images/accenture.jpg';
 
 export const profileInfo = {
   name: 'Fernando Alegria',
-  jobTitle: 'Senior Software Engineer',
+  jobTitle: 'Senior Software & DevOps Engineer',
   email: 'fernanalegria@gmail.com',
   phone: '+34 620 27 26 44',
   profilePic
@@ -27,8 +27,6 @@ export const siteLinks = [
   }
 ];
 
-export const buttons = [];
-
 export const careerSummary = [
   "I'm a Full-Stack Engineer with over 3 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. Although mobile and desktop apps are not my expertise, I do have some knowledge of React Native and Electron as well. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
   'In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland and these last two years at EY, thanks to such an international work environment I proudly belong to.',
@@ -38,22 +36,50 @@ export const careerSummary = [
 export const workExperience = [
   {
     id: 1,
-    jobTitle: 'Senior Software Engineer',
+    jobTitle: {
+      name: 'Senior Software & DevOps Engineer'
+    },
     from: 'Aug 2019',
     to: 'Present',
     company: {
-      name: 'EY',
+      name: 'EY AI Innovation Center',
       logo: eyLogo
     },
-    projects: []
+    projects: [
+      {
+        id: 1,
+        heading: 'Global AI product development for Assurance',
+        description: [
+          'Built CI/CD pipelines with the aid of GitLab CI/CD to deploy our solution on-premises',
+          'Definition and implementation of a Docker-based Django REST API architecture with support for asynchronous tasks and large data volumes and a client based on React and Redux',
+          'Set up different environments to support development, QA, UAT and production work',
+          'Implementation of a successful multitenant scheme and new features to leverage the existing solution as a global product'
+        ],
+        stack: [
+          'Docker',
+          'GitLab CI/CD',
+          'Red Hat Linux',
+          'React',
+          'Redux',
+          'Reactstrap',
+          'Django',
+          'MySQL',
+          'Redis',
+          'Celery',
+          'MinIO'
+        ]
+      }
+    ]
   },
   {
     id: 2,
-    jobTitle: 'Software Engineer',
+    jobTitle: {
+      name: 'Software Engineer'
+    },
     from: 'Feb 2018',
     to: 'Jul 2019',
     company: {
-      name: 'EY'
+      name: 'EY AI Innovation Center'
     },
     projects: [
       {
@@ -101,7 +127,9 @@ export const workExperience = [
   },
   {
     id: 3,
-    jobTitle: 'Front-End Web Developer',
+    jobTitle: {
+      name: 'Front-End Web Developer'
+    },
     from: 'Dec 2017',
     to: 'Feb 2018',
     company: {
@@ -112,22 +140,16 @@ export const workExperience = [
       {
         id: 1,
         heading: 'Marketing web development for the pharmaceutical industry',
-        description:
-          'Development of newsletters and microsites to launch ad campaigns',
-        stack: ['HTML', 'CSS']
-      },
-      {
-        id: 2,
-        heading: "Maintenance of an insurance client's public website",
-        description:
-          'SEO strategy was of high importance for the brand to be well positioned in the market. I helped the marketing team upload content to the website through a CMS.',
+        description: '',
         stack: ['Umbraco', 'AngularJS', 'HTML', 'CSS']
       }
     ]
   },
   {
     id: 4,
-    jobTitle: 'Full-Stack Web Developer',
+    jobTitle: {
+      name: 'Full-Stack Web Developer'
+    },
     from: 'Oct 2016',
     to: 'Dec 2017',
     company: {
@@ -186,7 +208,7 @@ export const skillSets = [
     weightable: true,
     items: [
       {
-        name: 'JavaScript ES5/ES6',
+        name: 'JavaScript ES6+',
         value: 100
       },
       {
@@ -194,11 +216,7 @@ export const skillSets = [
         value: 100
       },
       {
-        name: 'Vue.JS',
-        value: 80
-      },
-      {
-        name: 'Angular',
+        name: 'Vue.JS/Angular',
         value: 80
       },
       {
@@ -221,8 +239,12 @@ export const skillSets = [
         value: 100
       },
       {
+        name: 'Node.js',
+        value: 90
+      },
+      {
         name: 'Java',
-        value: 70
+        value: 60
       }
     ]
   },
@@ -232,41 +254,63 @@ export const skillSets = [
     weightable: true,
     items: [
       {
-        name: 'SQL Server',
+        name: 'SQL Server/MySQL',
+        value: 90
+      },
+      {
+        name: 'Azure Blob Storage/MinIO',
         value: 90
       },
       {
         name: 'Redis',
         value: 75
+      },
+      {
+        name: 'MongoDB',
+        value: 60
       }
     ]
   },
   {
     id: 4,
+    title: 'DevOps',
+    weightable: true,
+    items: [
+      {
+        name: 'GitLab CI/CD',
+        value: 90
+      },
+      {
+        name: 'Docker',
+        value: 90
+      }
+    ]
+  },
+  {
+    id: 5,
     title: 'Others',
     weightable: false,
-    items: [
-      'Code Review',
-      'Unit Testing',
-      'Wireframing',
-      'Git',
-      'Agile',
-      'Data Modelling',
-      'Responsive Design'
-    ]
+    items: ['Agile', 'Unit Testing', 'Data Modelling', 'Responsive Design']
   }
 ];
 
 export const education = [
   {
     id: 1,
+    title: 'AWS Cloud DevOps Nanodegree',
+    entity: 'Udacity',
+    from: 'Jan 2020',
+    to: 'Present'
+  },
+  {
+    id: 2,
     title: 'React Developer Nanodegree',
     entity: 'Udacity',
     from: 'Nov 2018',
     to: 'Apr 2019'
   },
   {
-    id: 2,
+    id: 3,
     title: 'BSc in Industrial Engineering',
     entity: 'Universidad Politécnica de Madrid (UPM)',
     from: '2010',
