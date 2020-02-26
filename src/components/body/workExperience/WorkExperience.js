@@ -3,7 +3,7 @@ import { workExperience } from '../../../assets/js/resumeStore';
 import CompanyExperience from './CompanyExperience';
 
 const WorkExperience = () => (
-  <section className="resume-section experience-section mb-3">
+  <section className="resume-section experience-section mb-5 mb-lg-3">
     <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
       Work Experience
     </h2>

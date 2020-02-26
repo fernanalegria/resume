@@ -8,10 +8,10 @@ import ReactToPrint from 'react-to-print';
 const { name, jobTitle, email, phone, profilePic } = profileInfo;
 
 const Header = ({ getResumeRef }) => (
-  <header className="resume-header pt-4 pt-md-0">
-    <div className="media flex-column flex-md-row">
+  <header className="resume-header pt-4 pt-lg-0">
+    <div className="media flex-column flex-lg-row">
       <img className="mr-3 img-fluid picture mx-auto" src={profilePic} alt="" />
-      <div className="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+      <div className="media-body p-4 d-flex flex-column flex-lg-row mx-auto mx-lg-0">
         <div className="primary-info">
           <h1 className="name mt-0 mb-1 text-white text-uppercase">{name}</h1>
           <div className="title mb-3">{jobTitle}</div>
@@ -32,7 +32,7 @@ const Header = ({ getResumeRef }) => (
             </li>
           </ul>
         </div>
-        <div className="secondary-info ml-md-auto mt-2">
+        <div className="secondary-info ml-lg-auto mt-2">
           <ul className="resume-social list-unstyled">
             {siteLinks.map(({ id, href, icon, text }) => (
               <li className="mb-3" key={id}>
