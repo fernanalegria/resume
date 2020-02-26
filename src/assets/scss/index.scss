@@ -9405,6 +9405,13 @@ a.theme-btn-on-bg {
 .resume-company-logo {
   height: 45px;
   width: auto;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .resume-company-logo {
+    visibility: visible;
+  }
 }
 
 .resume-position-time {
@@ -9467,7 +9474,7 @@ a.theme-btn-on-bg {
   color: #fb866a;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .resume-wrapper {
     padding-top: 0;
     padding-bottom: 0;
