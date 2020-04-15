@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SkillSet = ({ skillSet: { title, weightable, items } }) => (
-  <div className="resume-skill-item">
+  <div className={`resume-skill-item ${weightable ? '' : 'd-print-none'}`}>
     <h4 className="resume-skills-cat font-weight-bold">{title}</h4>
     {weightable ? (
       <ul className="list-unstyled mb-4">
