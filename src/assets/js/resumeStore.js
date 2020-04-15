@@ -216,16 +216,8 @@ export const skillSets = [
         value: 100
       },
       {
-        name: 'Vue.JS/Angular',
+        name: 'Vue.js/Angular',
         value: 80
-      },
-      {
-        name: 'Bootstrap',
-        value: 100
-      },
-      {
-        name: 'HTML5/CSS3',
-        value: 90
       }
     ]
   },
@@ -255,11 +247,7 @@ export const skillSets = [
     items: [
       {
         name: 'SQL Server/MySQL',
-        value: 90
-      },
-      {
-        name: 'Azure Blob Storage/MinIO',
-        value: 90
+        value: 100
       },
       {
         name: 'Redis',
@@ -273,21 +261,48 @@ export const skillSets = [
   },
   {
     id: 4,
-    title: 'DevOps',
+    title: 'Cloud',
     weightable: true,
     items: [
       {
-        name: 'GitLab CI/CD',
-        value: 90
+        name: 'AWS',
+        value: 70
       },
       {
-        name: 'Docker',
-        value: 90
+        name: 'Azure',
+        value: 50
       }
     ]
   },
   {
     id: 5,
+    title: 'DevOps',
+    weightable: true,
+    items: [
+      {
+        name: 'Docker',
+        value: 100
+      },
+      {
+        name: 'GitLab CI/Jenkins/CircleCI',
+        value: 90
+      },
+      {
+        name: 'Kubernetes/Docker Swarm',
+        value: 60
+      },
+      {
+        name: 'Ansible',
+        value: 50
+      },
+      {
+        name: 'Prometheus/Grafana/ELK',
+        value: 50
+      }
+    ]
+  },
+  {
+    id: 6,
     title: 'Others',
     weightable: false,
     items: ['Agile', 'Unit Testing', 'Data Modelling', 'Responsive Design']
