@@ -51,7 +51,7 @@ export const workExperience = [
         id: 1,
         heading: 'Amazon Business Delivery Experience',
         description:
-          'We own a variety of systems that allow B2B customers to provide delivery preferences for their organizations as a way to improve the post-checkout experience. As a service owner, I take care of designing, building and maintaining our services and infrastructure. As an engineer, I also contribute to operational excellence tasks that help us keep the bar high when it comes to service availability and performance.',
+          'I have been contributing to AB DEX organization goals since I joined the firm. It comprises a set of systems that allow B2B customers to provide delivery preferences for their organizations as a way to improve the post-checkout experience. As a service owner, I take care of designing, building and maintaining our services and infrastructure. As an engineer, I also contribute to operational excellence tasks that help us keep the bar high when it comes to service availability and performance.',
         stack: [
           'React',
           'Redux',
@@ -72,7 +72,7 @@ export const workExperience = [
       name: 'Senior Software & DevOps Engineer'
     },
     from: 'Aug 2019',
-    to: 'Present',
+    to: 'Jun 2020',
     company: {
       name: 'EY AI Innovation Center',
       logo: eyLogo
