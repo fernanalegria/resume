@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5e264d16895b00d22f95",
-    "url": "/resume/static/css/main.ac3d290c.chunk.css"
+    "revision": "a25913cc6b688e72dee6",
+    "url": "/resume/static/css/main.20557916.chunk.css"
   },
   {
-    "revision": "5e264d16895b00d22f95",
-    "url": "/resume/static/js/main.5e264d16.chunk.js"
+    "revision": "a25913cc6b688e72dee6",
+    "url": "/resume/static/js/main.a25913cc.chunk.js"
   },
   {
     "revision": "fd78f13f2eeb6b64bd90",
@@ -32,36 +32,36 @@ self.__precacheManifest = [
     "url": "/resume/static/media/accenture.f120c6e7.jpg"
   },
   {
-    "revision": "067595ad77ecc0db9c81c8905a7eef32",
-    "url": "/resume/static/media/fa-brands-400.067595ad.woff2"
+    "revision": "57dcda6f368ea90179f75cbdae96c263",
+    "url": "/resume/static/media/fa-brands-400.57dcda6f.eot"
   },
   {
     "revision": "b564da88bbf0c4aa446fa19653713cd1",
     "url": "/resume/static/media/fa-brands-400.b564da88.woff"
   },
   {
-    "revision": "57dcda6f368ea90179f75cbdae96c263",
-    "url": "/resume/static/media/fa-brands-400.57dcda6f.eot"
-  },
-  {
-    "revision": "9ec698d1a597bff5df337094b71ddaaf",
-    "url": "/resume/static/media/fa-brands-400.9ec698d1.ttf"
+    "revision": "067595ad77ecc0db9c81c8905a7eef32",
+    "url": "/resume/static/media/fa-brands-400.067595ad.woff2"
   },
   {
     "revision": "3351f435b3c9037fd88aeb04dc1e43bc",
     "url": "/resume/static/media/fa-regular-400.3351f435.eot"
   },
   {
+    "revision": "9ec698d1a597bff5df337094b71ddaaf",
+    "url": "/resume/static/media/fa-brands-400.9ec698d1.ttf"
+  },
+  {
     "revision": "4165c2688309cbfb1b877caf8f75afb5",
     "url": "/resume/static/media/fa-regular-400.4165c268.woff2"
   },
   {
-    "revision": "73cf49a2232c06c920b7a34e36bfb58c",
-    "url": "/resume/static/media/fa-regular-400.73cf49a2.woff"
-  },
-  {
     "revision": "a0e3ac82940c1998c5977fd4bc1f5ef6",
     "url": "/resume/static/media/fa-regular-400.a0e3ac82.ttf"
+  },
+  {
+    "revision": "73cf49a2232c06c920b7a34e36bfb58c",
+    "url": "/resume/static/media/fa-regular-400.73cf49a2.woff"
   },
   {
     "revision": "89e02bae13c9131c7468b1e729339ac1",
@@ -76,12 +76,12 @@ self.__precacheManifest = [
     "url": "/resume/static/media/fa-solid-900.55eb2a60.woff2"
   },
   {
-    "revision": "cdfec5cf5e9840889790bcf2c4042583",
-    "url": "/resume/static/media/fa-solid-900.cdfec5cf.woff"
-  },
-  {
     "revision": "75f38a159982b6bd1704891332d95fa7",
     "url": "/resume/static/media/fa-solid-900.75f38a15.ttf"
+  },
+  {
+    "revision": "cdfec5cf5e9840889790bcf2c4042583",
+    "url": "/resume/static/media/fa-solid-900.cdfec5cf.woff"
   },
   {
     "revision": "9d67fa1429375bd2a899a17eb77d0342",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/resume/static/media/fa-solid-900.0724bb8b.svg"
   },
   {
-    "revision": "beab3dcf9ed7684fd31f1d410e45c51e",
+    "revision": "9c66d2ac88172c244544f1d4b8e62e6b",
     "url": "/resume/index.html"
   }
 ];
