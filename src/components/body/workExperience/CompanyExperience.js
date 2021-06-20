@@ -7,11 +7,12 @@ const CompanyExperience = ({
     from,
     to,
     company: { name, logo },
-    projects
+    projects,
+    printable = true
   },
   className = ''
 }) => (
-  <article className={`resume-timeline-item position-relative ${className}`}>
+  <article className={`resume-timeline-item position-relative ${className} ${printable ? '' : 'd-print-none'}`}>
     <div className="resume-timeline-item-header mb-2">
       <h3 className="resume-position-title font-weight-bold mb-1">
         <Fragment>
