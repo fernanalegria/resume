@@ -1,4 +1,5 @@
 import profilePic from '../images/profile-min.JPG';
+import amazonLogo from '../images/amazon.png';
 import eyLogo from '../images/ey.png';
 import deloitteLogo from '../images/deloitte.png';
 import minsaitLogo from '../images/minsait.jpg';
@@ -6,7 +7,7 @@ import accentureLogo from '../images/accenture.jpg';
 
 export const profileInfo = {
   name: 'Fernando Alegria',
-  jobTitle: 'Senior Software & DevOps Engineer',
+  jobTitle: 'Senior Software Engineer',
   email: 'fernanalegria@gmail.com',
   phone: '+34 620 27 26 44',
   profilePic
@@ -28,14 +29,45 @@ export const siteLinks = [
 ];
 
 export const careerSummary = [
-  "I'm a Full-Stack Engineer with over 3 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. Although mobile and desktop apps are not my expertise, I do have some knowledge of React Native and Electron as well. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to improve my DevOps and Cloud Computing skills.",
-  'In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland and these last two years at EY, thanks to such an international work environment I proudly belong to.',
-  "These days, my focus is on further improving my coding and soft skills in order to grow my tech career. What's more, I love to help and learn from my teammates so that everyone knows and follows best practices. Only by doing so, can we offer high quality services up to the most demanding clients' standard."
+  "I'm a Full-Stack Engineer with over 4 years of experience working with Front-End frameworks (React, Vue.js, Angular, ...) and developing REST APIs and data pipelines mostly with Django and Python. Although mobile development is not my area of expertise, I do have some knowledge of React Native as well including a portfolio of a couple of mobile apps. As a self-taught developer, I love to keep learning and challenging myself everyday. In the short term, I would like to take my consolidated React knowledge to the next level and also earn the AWS developer certification.",
+  "In terms of languages, I have developed a high level of English over the last few years. Especially during my stay in Ireland and these last three years at Amazon and EY, thanks to the enriching international environment I've belonged to. Currently, I'm also learning French in my free time.",
+  "My focus is always on further improving my coding and soft skills. Furthermore, I consider mentoring and team collaboration a must. I love to help and learn from my teammates so that everyone knows and follows best practices. Only by doing so, can we offer high quality services up to the most demanding clients' standard."
 ];
 
 export const workExperience = [
   {
     id: 1,
+    jobTitle: {
+      name: 'Software Development Engineer'
+    },
+    from: 'Jul 2020',
+    to: 'Present',
+    company: {
+      name: 'Amazon Business',
+      logo: amazonLogo
+    },
+    projects: [
+      {
+        id: 1,
+        heading: 'Amazon Business Delivery Experience',
+        description:
+          'We own a variety of systems that allow B2B customers to provide delivery preferences for their organizations as a way to improve the post-checkout experience. As a service owner, I take care of designing, building and maintaining our services and infrastructure. As an engineer, I also contribute to operational excellence tasks that help us keep the bar high when it comes to service availability and performance.',
+        stack: [
+          'React',
+          'Redux',
+          'Java',
+          'AWS Lambda',
+          'SQS',
+          'SNS',
+          'ECS',
+          'DynamoDB',
+          'CloudFormation'
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
     jobTitle: {
       name: 'Senior Software & DevOps Engineer'
     },
@@ -58,11 +90,10 @@ export const workExperience = [
         stack: [
           'Docker',
           'GitLab CI/CD',
-          'Red Hat Linux',
           'React',
           'Redux',
           'Reactstrap',
-          'Django',
+          'Python/Django',
           'MySQL',
           'Redis',
           'Celery',
@@ -72,7 +103,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     jobTitle: {
       name: 'Software Engineer'
     },
@@ -93,13 +124,12 @@ export const workExperience = [
           'Bootstrap',
           'HTML5',
           'Scss',
-          'Django',
+          'Python/Django',
           'SQL Server',
           'Redis',
           'Docker',
           'Kubernetes',
-          'Azure DevOps',
-          'Kibana'
+          'Azure DevOps'
         ]
       },
       {
@@ -110,15 +140,12 @@ export const workExperience = [
           'Our web platform is key to monitor the ingestion process and measure data quality. The entire platform was built with a wide range of cutting-edge technologies and the aid of an Agile software development methodology. Furthermore, Quality Assurance (QA) was enforced to deliver a robust asset, which is helpful across multiple industries.',
         stack: [
           'Vue.js',
-          'JS',
           'Socket.IO',
           'Bootstrap',
           'HTML5',
           'CSS3',
-          'Django',
-          'Python',
+          'Python/Django',
           'SQL Server',
-          'SQLite',
           'Apache Hive',
           'Selenium'
         ]
@@ -126,7 +153,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     jobTitle: {
       name: 'Front-End Web Developer'
     },
@@ -146,7 +173,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     jobTitle: {
       name: 'Full-Stack Web Developer'
     },
@@ -160,13 +187,7 @@ export const workExperience = [
       {
         id: 1,
         heading:
-          'Development and maintenance of a variety of solutions for the transport and logistics industry',
-        description: [
-          'Development of new and existing single-page applications (SPA).',
-          'UX Design',
-          'Support to solve defects from QA and UAT',
-          'Software test plans and functional testing'
-        ],
+          'Development, maintenance and UI/UX Design of a variety of solutions for the transport and logistics industry',
         stack: [
           'Ext JS',
           'Java',
@@ -181,7 +202,7 @@ export const workExperience = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     jobTitle: {
       name: 'SAP Consultant',
       subcategory: 'Intern'
@@ -197,7 +218,8 @@ export const workExperience = [
         id: 1,
         heading: 'SAP R/3 Bootcamp'
       }
-    ]
+    ],
+    printable: false
   }
 ];
 
@@ -236,7 +258,7 @@ export const skillSets = [
       },
       {
         name: 'Java',
-        value: 60
+        value: 75
       }
     ]
   },
@@ -266,7 +288,7 @@ export const skillSets = [
     items: [
       {
         name: 'AWS',
-        value: 70
+        value: 80
       },
       {
         name: 'Azure',
@@ -290,14 +312,6 @@ export const skillSets = [
       {
         name: 'Kubernetes/Docker Swarm',
         value: 60
-      },
-      {
-        name: 'Ansible',
-        value: 50
-      },
-      {
-        name: 'Prometheus/Grafana/ELK',
-        value: 50
       }
     ]
   },
@@ -305,14 +319,21 @@ export const skillSets = [
     id: 6,
     title: 'Others',
     weightable: false,
-    items: ['Agile', 'Unit Testing', 'Data Modelling', 'Responsive Design']
+    items: [
+      'Agile',
+      'QA',
+      'Data Modelling',
+      'Mobile Development',
+      'UI/UX Design',
+      'Responsive Design'
+    ]
   }
 ];
 
 export const education = [
   {
     id: 1,
-    title: 'AWS Cloud DevOps Nanodegree',
+    title: 'Cloud DevOps Nanodegree',
     entity: 'Udacity',
     from: 'Jan 2020',
     to: 'Present'
@@ -356,9 +377,4 @@ export const languages = [
   }
 ];
 
-export const interests = [
-  'Development cooperation',
-  'Sustainability',
-  'Travelling',
-  'Cycling'
-];
+export const interests = ['Sustainability', 'Travelling', 'Cycling/Hiking'];
