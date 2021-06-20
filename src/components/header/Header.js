@@ -53,7 +53,7 @@ const Header = ({ getResumeRef }) => (
                 />
               ) : (
                 <SiteLink
-                  href="/FernandoAlegria_Resume.pdf"
+                  href="/resume/FernandoAlegria_Resume.pdf"
                   icon="fas fa-file-pdf"
                   text="Print or download"
                 />
